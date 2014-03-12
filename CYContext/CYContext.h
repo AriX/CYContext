@@ -7,12 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <JavaScriptCore/JavaScriptCore.h>
 
 extern NSString * const CYErrorLineKey;
 extern NSString * const CYErrorNameKey;
 extern NSString * const CYErrorMessageKey;
 
-@interface CYContext : NSObject
+@interface CYContext : NSObject {
+    JSGlobalContextRef _context;
+}
+
++ (BOOL)isAvailable;
 
 - (NSString *)evaluateCycript:(NSString *)cycript error:(NSError **)error;
 

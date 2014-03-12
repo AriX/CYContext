@@ -6,31 +6,38 @@
 //  Copyright (c) 2013 Kramer Software Productions, LLC. All rights reserved.
 //
 
-#import <JavaScriptCore/JavaScriptCore.h>
-#import <cycript/cycript.h>
-
 #import "CYContext.h"
+#import <cycript/cycript.h>
 
 NSString * const CYErrorLineKey = @"CYErrorLineKey";
 NSString * const CYErrorNameKey = @"CYErrorNameKey";
 NSString * const CYErrorMessageKey = @"CYErrorMessageKey";
 
-@implementation CYContext {
-    JSGlobalContextRef _context;
+@implementation CYContext
+
++ (BOOL)isAvailable {
+    return (CydgetSetupContext != NULL && CydgetMemoryParse != NULL && JSGlobalContextCreate != NULL);
 }
 
 - (instancetype)init {
-    self = [super init];
-    if (self) {
-        _context = JSGlobalContextCreate(NULL);
-        CydgetSetupContext(_context);
+    if (![[self class] isAvailable]) {
+        [self release];
+        return nil;
     }
+
+    self = [super init];
+    if (!self)
+        return nil;
+
+    _context = JSGlobalContextCreate(NULL);
+    CydgetSetupContext(_context);
+
     return self;
 }
 
 - (void)dealloc {
     JSGlobalContextRelease(_context);
-    
+
     [super dealloc];
 }
 
