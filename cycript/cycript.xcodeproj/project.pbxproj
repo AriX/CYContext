@@ -9,6 +9,26 @@
 /* Begin PBXBuildFile section */
 		025FEABC18D00E950024AE80 /* Output.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 025FEABB18D00E950024AE80 /* Output.cpp */; };
 		0285752718D018310024DADA /* libffi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0285752218D018200024DADA /* libffi.a */; };
+		0285753118D01A5A0024DADA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0285753018D01A5A0024DADA /* Cocoa.framework */; };
+		0285755818D01B940024DADA /* ConvertUTF.c in Sources */ = {isa = PBXBuildFile; fileRef = D008ED3E17A2E4ED0047DEB0 /* ConvertUTF.c */; };
+		0285755918D01B940024DADA /* Highlight.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D008ED4017A2E4F70047DEB0 /* Highlight.cpp */; };
+		0285755A18D01B940024DADA /* Network.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D008ED4217A2E4FE0047DEB0 /* Network.cpp */; };
+		0285755B18D01B940024DADA /* Output.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D008ED4417A2E5050047DEB0 /* Output.cpp */; };
+		0285755C18D01B940024DADA /* Parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D008ED4617A2E50C0047DEB0 /* Parser.cpp */; };
+		0285755D18D01B940024DADA /* Replace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D008ED4817A2E5120047DEB0 /* Replace.cpp */; };
+		0285755E18D01B940024DADA /* Bridge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D008ED4A17A2E5840047DEB0 /* Bridge.cpp */; };
+		0285755F18D01B940024DADA /* Execute.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D008ED4C17A2E5910047DEB0 /* Execute.cpp */; };
+		0285756018D01B940024DADA /* JavaScriptCore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D008ED4E17A2E5990047DEB0 /* JavaScriptCore.cpp */; };
+		0285756118D01B940024DADA /* Library.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D008ED5017A2E5A20047DEB0 /* Library.cpp */; };
+		0285756218D01B960024DADA /* copy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D008ED5217A2E5C30047DEB0 /* copy.cpp */; };
+		0285756318D01B960024DADA /* ffi_type.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D008ED5317A2E5C30047DEB0 /* ffi_type.cpp */; };
+		0285756418D01B960024DADA /* parse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D008ED5417A2E5C30047DEB0 /* parse.cpp */; };
+		0285756518D01B9A0024DADA /* Output.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 025FEABB18D00E950024AE80 /* Output.cpp */; };
+		0285756618D01B9A0024DADA /* Replace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D008ED5B17A2E5F80047DEB0 /* Replace.cpp */; };
+		0285756718D01B9A0024DADA /* Library.mm in Sources */ = {isa = PBXBuildFile; fileRef = D008ED5D17A2E5FD0047DEB0 /* Library.mm */; };
+		0285756818D01B9F0024DADA /* lex.cy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D008ED6117A2EC8B0047DEB0 /* lex.cy.cpp */; };
+		0285756918D01B9F0024DADA /* Cycript.tab.cc in Sources */ = {isa = PBXBuildFile; fileRef = D008ED9A17A31C7C0047DEB0 /* Cycript.tab.cc */; };
+		0285756B18D01CE10024DADA /* libffi.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0285756A18D01CE10024DADA /* libffi.dylib */; };
 		D008ED2517A2E47D0047DEB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D008ED2417A2E47D0047DEB0 /* Foundation.framework */; };
 		D008ED3F17A2E4ED0047DEB0 /* ConvertUTF.c in Sources */ = {isa = PBXBuildFile; fileRef = D008ED3E17A2E4ED0047DEB0 /* ConvertUTF.c */; };
 		D008ED4117A2E4F70047DEB0 /* Highlight.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D008ED4017A2E4F70047DEB0 /* Highlight.cpp */; };
@@ -71,7 +91,14 @@
 /* Begin PBXFileReference section */
 		025FEABB18D00E950024AE80 /* Output.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Output.cpp; path = libcycript/ObjectiveC/Output.cpp; sourceTree = SOURCE_ROOT; };
 		0285751C18D018200024DADA /* libffi.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libffi.xcodeproj; path = "libffi-iOS/libffi.xcodeproj"; sourceTree = "<group>"; };
-		D008ED2117A2E47D0047DEB0 /* libcycript.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libcycript.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0285752F18D01A5A0024DADA /* libcycript-Mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libcycript-Mac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0285753018D01A5A0024DADA /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		0285753318D01A5A0024DADA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0285753418D01A5A0024DADA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		0285753518D01A5A0024DADA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		0285754118D01A5A0024DADA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		0285756A18D01CE10024DADA /* libffi.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libffi.dylib; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libffi.dylib; sourceTree = DEVELOPER_DIR; };
+		D008ED2117A2E47D0047DEB0 /* libcycript-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libcycript-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D008ED2417A2E47D0047DEB0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D008ED3E17A2E4ED0047DEB0 /* ConvertUTF.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ConvertUTF.c; path = libcycript/ConvertUTF.c; sourceTree = SOURCE_ROOT; };
 		D008ED4017A2E4F70047DEB0 /* Highlight.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Highlight.cpp; path = libcycript/Highlight.cpp; sourceTree = SOURCE_ROOT; };
@@ -95,6 +122,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0285752C18D01A5A0024DADA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0285756B18D01CE10024DADA /* libffi.dylib in Frameworks */,
+				0285753118D01A5A0024DADA /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D008ED1E17A2E47D0047DEB0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -117,6 +153,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		0285753218D01A5A0024DADA /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0285753318D01A5A0024DADA /* Foundation.framework */,
+				0285753418D01A5A0024DADA /* CoreData.framework */,
+				0285753518D01A5A0024DADA /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
 		D008ED1817A2E47D0047DEB0 = {
 			isa = PBXGroup;
 			children = (
@@ -130,7 +176,8 @@
 		D008ED2217A2E47D0047DEB0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D008ED2117A2E47D0047DEB0 /* libcycript.a */,
+				D008ED2117A2E47D0047DEB0 /* libcycript-iOS.a */,
+				0285752F18D01A5A0024DADA /* libcycript-Mac.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,9 +185,13 @@
 		D008ED2317A2E47D0047DEB0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0285756A18D01CE10024DADA /* libffi.dylib */,
 				0285751C18D018200024DADA /* libffi.xcodeproj */,
 				D07514C517CB038F0055B2FA /* JavaScriptCore.framework */,
 				D008ED2417A2E47D0047DEB0 /* Foundation.framework */,
+				0285753018D01A5A0024DADA /* Cocoa.framework */,
+				0285754118D01A5A0024DADA /* XCTest.framework */,
+				0285753218D01A5A0024DADA /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -196,10 +247,37 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		0285752D18D01A5A0024DADA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		D008ED2017A2E47D0047DEB0 /* cycript */ = {
+		0285752E18D01A5A0024DADA /* cycript-Mac */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D008ED2F17A2E47D0047DEB0 /* Build configuration list for PBXNativeTarget "cycript" */;
+			buildConfigurationList = 0285754F18D01A5A0024DADA /* Build configuration list for PBXNativeTarget "cycript-Mac" */;
+			buildPhases = (
+				0285752B18D01A5A0024DADA /* Sources */,
+				0285752C18D01A5A0024DADA /* Frameworks */,
+				0285752D18D01A5A0024DADA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "cycript-Mac";
+			productName = "cycript-Mac";
+			productReference = 0285752F18D01A5A0024DADA /* libcycript-Mac.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D008ED2017A2E47D0047DEB0 /* cycript-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D008ED2F17A2E47D0047DEB0 /* Build configuration list for PBXNativeTarget "cycript-iOS" */;
 			buildPhases = (
 				D008ED6017A2E7CA0047DEB0 /* Preprocess Sources */,
 				D008ED1D17A2E47D0047DEB0 /* Sources */,
@@ -211,9 +289,9 @@
 			dependencies = (
 				0285752618D018290024DADA /* PBXTargetDependency */,
 			);
-			name = cycript;
+			name = "cycript-iOS";
 			productName = cycript;
-			productReference = D008ED2117A2E47D0047DEB0 /* libcycript.a */;
+			productReference = D008ED2117A2E47D0047DEB0 /* libcycript-iOS.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -243,7 +321,8 @@
 			);
 			projectRoot = "";
 			targets = (
-				D008ED2017A2E47D0047DEB0 /* cycript */,
+				D008ED2017A2E47D0047DEB0 /* cycript-iOS */,
+				0285752E18D01A5A0024DADA /* cycript-Mac */,
 			);
 		};
 /* End PBXProject section */
@@ -288,6 +367,31 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0285752B18D01A5A0024DADA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0285755E18D01B940024DADA /* Bridge.cpp in Sources */,
+				0285756918D01B9F0024DADA /* Cycript.tab.cc in Sources */,
+				0285756018D01B940024DADA /* JavaScriptCore.cpp in Sources */,
+				0285755B18D01B940024DADA /* Output.cpp in Sources */,
+				0285756418D01B960024DADA /* parse.cpp in Sources */,
+				0285755918D01B940024DADA /* Highlight.cpp in Sources */,
+				0285755A18D01B940024DADA /* Network.cpp in Sources */,
+				0285756518D01B9A0024DADA /* Output.cpp in Sources */,
+				0285756718D01B9A0024DADA /* Library.mm in Sources */,
+				0285756218D01B960024DADA /* copy.cpp in Sources */,
+				0285756118D01B940024DADA /* Library.cpp in Sources */,
+				0285755C18D01B940024DADA /* Parser.cpp in Sources */,
+				0285755D18D01B940024DADA /* Replace.cpp in Sources */,
+				0285756818D01B9F0024DADA /* lex.cy.cpp in Sources */,
+				0285755818D01B940024DADA /* ConvertUTF.c in Sources */,
+				0285755F18D01B940024DADA /* Execute.cpp in Sources */,
+				0285756618D01B9A0024DADA /* Replace.cpp in Sources */,
+				0285756318D01B960024DADA /* ffi_type.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D008ED1D17A2E47D0047DEB0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -324,6 +428,52 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0285755018D01A5A0024DADA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-DCY_EXECUTE",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		0285755118D01A5A0024DADA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OTHER_CFLAGS = (
+					"-DCY_EXECUTE",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		D008ED2D17A2E47D0047DEB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -386,7 +536,6 @@
 		D008ED3017A2E47D0047DEB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DSTROOT = /tmp/cycript.dst;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = (
 					"-DCY_EXECUTE",
@@ -400,7 +549,7 @@
 		D008ED3117A2E47D0047DEB0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DSTROOT = /tmp/cycript.dst;
+				ENABLE_NS_ASSERTIONS = NO;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = (
 					"-DCY_EXECUTE",
@@ -414,6 +563,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0285754F18D01A5A0024DADA /* Build configuration list for PBXNativeTarget "cycript-Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0285755018D01A5A0024DADA /* Debug */,
+				0285755118D01A5A0024DADA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D008ED1C17A2E47D0047DEB0 /* Build configuration list for PBXProject "cycript" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -423,7 +581,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D008ED2F17A2E47D0047DEB0 /* Build configuration list for PBXNativeTarget "cycript" */ = {
+		D008ED2F17A2E47D0047DEB0 /* Build configuration list for PBXNativeTarget "cycript-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D008ED3017A2E47D0047DEB0 /* Debug */,
