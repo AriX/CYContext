@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02175E8A18D0238800DBC975 /* Decode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 02175E8918D0238800DBC975 /* Decode.cpp */; };
+		02175E8B18D0238800DBC975 /* Decode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 02175E8918D0238800DBC975 /* Decode.cpp */; };
+		02175E8E18D023A000DBC975 /* Driver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 02175E8D18D023A000DBC975 /* Driver.cpp */; };
+		02175E8F18D023A000DBC975 /* Driver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 02175E8D18D023A000DBC975 /* Driver.cpp */; };
 		025FEABC18D00E950024AE80 /* Output.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 025FEABB18D00E950024AE80 /* Output.cpp */; };
 		0285752718D018310024DADA /* libffi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0285752218D018200024DADA /* libffi.a */; };
 		0285753118D01A5A0024DADA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0285753018D01A5A0024DADA /* Cocoa.framework */; };
@@ -89,6 +93,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		02175E8918D0238800DBC975 /* Decode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Decode.cpp; path = libcycript/Decode.cpp; sourceTree = SOURCE_ROOT; };
+		02175E8D18D023A000DBC975 /* Driver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Driver.cpp; path = libcycript/Driver.cpp; sourceTree = SOURCE_ROOT; };
 		025FEABB18D00E950024AE80 /* Output.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Output.cpp; path = libcycript/ObjectiveC/Output.cpp; sourceTree = SOURCE_ROOT; };
 		0285751C18D018200024DADA /* libffi.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libffi.xcodeproj; path = "libffi-iOS/libffi.xcodeproj"; sourceTree = "<group>"; };
 		0285752F18D01A5A0024DADA /* libcycript-Mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libcycript-Mac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -202,6 +208,8 @@
 				D008ED3E17A2E4ED0047DEB0 /* ConvertUTF.c */,
 				D008ED4017A2E4F70047DEB0 /* Highlight.cpp */,
 				D008ED4217A2E4FE0047DEB0 /* Network.cpp */,
+				02175E8918D0238800DBC975 /* Decode.cpp */,
+				02175E8D18D023A000DBC975 /* Driver.cpp */,
 				D008ED4417A2E5050047DEB0 /* Output.cpp */,
 				D008ED4617A2E50C0047DEB0 /* Parser.cpp */,
 				D008ED4817A2E5120047DEB0 /* Replace.cpp */,
@@ -373,6 +381,7 @@
 			files = (
 				0285755E18D01B940024DADA /* Bridge.cpp in Sources */,
 				0285756918D01B9F0024DADA /* Cycript.tab.cc in Sources */,
+				02175E8B18D0238800DBC975 /* Decode.cpp in Sources */,
 				0285756018D01B940024DADA /* JavaScriptCore.cpp in Sources */,
 				0285755B18D01B940024DADA /* Output.cpp in Sources */,
 				0285756418D01B960024DADA /* parse.cpp in Sources */,
@@ -389,6 +398,7 @@
 				0285755F18D01B940024DADA /* Execute.cpp in Sources */,
 				0285756618D01B9A0024DADA /* Replace.cpp in Sources */,
 				0285756318D01B960024DADA /* ffi_type.cpp in Sources */,
+				02175E8F18D023A000DBC975 /* Driver.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,6 +408,7 @@
 			files = (
 				D008ED3F17A2E4ED0047DEB0 /* ConvertUTF.c in Sources */,
 				D008ED4117A2E4F70047DEB0 /* Highlight.cpp in Sources */,
+				02175E8A18D0238800DBC975 /* Decode.cpp in Sources */,
 				025FEABC18D00E950024AE80 /* Output.cpp in Sources */,
 				D008ED4317A2E4FE0047DEB0 /* Network.cpp in Sources */,
 				D008ED4517A2E5050047DEB0 /* Output.cpp in Sources */,
@@ -414,6 +425,7 @@
 				D008ED5E17A2E5FD0047DEB0 /* Library.mm in Sources */,
 				D008ED6217A2EC8B0047DEB0 /* lex.cy.cpp in Sources */,
 				D008ED9B17A31C7C0047DEB0 /* Cycript.tab.cc in Sources */,
+				02175E8E18D023A000DBC975 /* Driver.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

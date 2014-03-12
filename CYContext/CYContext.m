@@ -7,8 +7,7 @@
 //
 
 #import <JavaScriptCore/JavaScriptCore.h>
-
-#include <cycript/cycript.h>
+#import <cycript/cycript.h>
 
 #import "CYContext.h"
 
@@ -31,6 +30,8 @@ NSString * const CYErrorMessageKey = @"CYErrorMessageKey";
 
 - (void)dealloc {
     JSGlobalContextRelease(_context);
+    
+    [super dealloc];
 }
 
 - (NSString *)evaluateCycript:(NSString *)cycript error:(NSError **)error {
@@ -54,7 +55,7 @@ NSString * const CYErrorMessageKey = @"CYErrorMessageKey";
     if (result) {
         JSStringRef string = JSValueToStringCopy(_context, result, &exception);
         if (string) {
-            resultString = (__bridge_transfer NSString *)JSStringCopyCFString(kCFAllocatorDefault, string);
+            resultString = [(NSString *)JSStringCopyCFString(kCFAllocatorDefault, string) autorelease];
             JSStringRelease(string);
         }
     }
@@ -66,15 +67,15 @@ NSString * const CYErrorMessageKey = @"CYErrorMessageKey";
         NSInteger line = (NSInteger)JSValueToNumber(_context, JSObjectGetProperty(_context, exceptionObject, JSStringCreateWithUTF8CString("line"), NULL), NULL);
 
         JSStringRef string = JSValueToStringCopy(_context, JSObjectGetProperty(_context, exceptionObject, JSStringCreateWithUTF8CString("name"), NULL), NULL);
-        NSString *name = (__bridge_transfer NSString *)JSStringCopyCFString(kCFAllocatorDefault, string);
+        NSString *name = (NSString *)JSStringCopyCFString(kCFAllocatorDefault, string);
         JSStringRelease(string);
 
         string = JSValueToStringCopy(_context, JSObjectGetProperty(_context, exceptionObject, JSStringCreateWithUTF8CString("message"), NULL), NULL);
-        NSString *message = (__bridge_transfer NSString *)JSStringCopyCFString(kCFAllocatorDefault, string);
+        NSString *message = (NSString *)JSStringCopyCFString(kCFAllocatorDefault, string);
         JSStringRelease(string);
 
         string = JSValueToStringCopy(_context, exception, NULL);
-        NSString *description = (__bridge_transfer NSString *)JSStringCopyCFString(kCFAllocatorDefault, string);
+        NSString *description = (NSString *)JSStringCopyCFString(kCFAllocatorDefault, string);
         JSStringRelease(string);
 
         NSMutableDictionary *userInfo = [NSMutableDictionary dictionary];
@@ -83,6 +84,10 @@ NSString * const CYErrorMessageKey = @"CYErrorMessageKey";
         [userInfo setValue:message forKey:CYErrorMessageKey];
         [userInfo setValue:description forKey:NSLocalizedDescriptionKey];
         *error = [NSError errorWithDomain:@"CYContextDomain" code:0 userInfo:userInfo];
+        
+        [name release];
+        [message release];
+        [description release];
     }
 
     return resultString;

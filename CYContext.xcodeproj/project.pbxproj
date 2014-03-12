@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D028F4CA17CB0B6E0095507C /* libcycript.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D075153B17CB0B350055B2FA /* libcycript.a */; };
+		D028F4CA17CB0B6E0095507C /* libcycript-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D075153B17CB0B350055B2FA /* libcycript-iOS.a */; };
 		D028F4CF17CB0DE50095507C /* CYContext.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D075151017CB085A0055B2FA /* CYContext.h */; };
 		D075150C17CB085A0055B2FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D075150B17CB085A0055B2FA /* Foundation.framework */; };
 		D075151317CB085A0055B2FA /* CYContext.m in Sources */ = {isa = PBXBuildFile; fileRef = D075151217CB085A0055B2FA /* CYContext.m */; };
@@ -15,6 +15,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		02175E8018D021A800DBC975 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D075153517CB0B350055B2FA /* cycript.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0285752F18D01A5A0024DADA;
+			remoteInfo = "cycript-Mac";
+		};
 		D028F4C717CB0B690095507C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D075153517CB0B350055B2FA /* cycript.xcodeproj */;
@@ -58,7 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D028F4CA17CB0B6E0095507C /* libcycript.a in Frameworks */,
+				D028F4CA17CB0B6E0095507C /* libcycript-iOS.a in Frameworks */,
 				D075153417CB0AD90055B2FA /* JavaScriptCore.framework in Frameworks */,
 				D075150C17CB085A0055B2FA /* Foundation.framework in Frameworks */,
 			);
@@ -106,7 +113,8 @@
 		D075153617CB0B350055B2FA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D075153B17CB0B350055B2FA /* libcycript.a */,
+				D075153B17CB0B350055B2FA /* libcycript-iOS.a */,
+				02175E8118D021A800DBC975 /* libcycript-Mac.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -165,10 +173,17 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		D075153B17CB0B350055B2FA /* libcycript.a */ = {
+		02175E8118D021A800DBC975 /* libcycript-Mac.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = libcycript.a;
+			path = "libcycript-Mac.a";
+			remoteRef = 02175E8018D021A800DBC975 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D075153B17CB0B350055B2FA /* libcycript-iOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libcycript-iOS.a";
 			remoteRef = D075153A17CB0B350055B2FA /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -260,6 +275,7 @@
 		D075152C17CB085A0055B2FA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -269,6 +285,7 @@
 		D075152D17CB085A0055B2FA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
