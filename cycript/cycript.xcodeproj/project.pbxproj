@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		025FEABC18D00E950024AE80 /* Output.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 025FEABB18D00E950024AE80 /* Output.cpp */; };
+		0285752718D018310024DADA /* libffi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0285752218D018200024DADA /* libffi.a */; };
 		D008ED2517A2E47D0047DEB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D008ED2417A2E47D0047DEB0 /* Foundation.framework */; };
-		D008ED3D17A2E4B80047DEB0 /* libffi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D008ED3817A2E4A50047DEB0 /* libffi.a */; };
 		D008ED3F17A2E4ED0047DEB0 /* ConvertUTF.c in Sources */ = {isa = PBXBuildFile; fileRef = D008ED3E17A2E4ED0047DEB0 /* ConvertUTF.c */; };
 		D008ED4117A2E4F70047DEB0 /* Highlight.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D008ED4017A2E4F70047DEB0 /* Highlight.cpp */; };
 		D008ED4317A2E4FE0047DEB0 /* Network.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D008ED4217A2E4FE0047DEB0 /* Network.cpp */; };
@@ -22,7 +23,6 @@
 		D008ED5517A2E5C30047DEB0 /* copy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D008ED5217A2E5C30047DEB0 /* copy.cpp */; };
 		D008ED5617A2E5C30047DEB0 /* ffi_type.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D008ED5317A2E5C30047DEB0 /* ffi_type.cpp */; };
 		D008ED5717A2E5C30047DEB0 /* parse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D008ED5417A2E5C30047DEB0 /* parse.cpp */; };
-		D008ED5A17A2E5F00047DEB0 /* Output.mm in Sources */ = {isa = PBXBuildFile; fileRef = D008ED5917A2E5F00047DEB0 /* Output.mm */; };
 		D008ED5C17A2E5F80047DEB0 /* Replace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D008ED5B17A2E5F80047DEB0 /* Replace.cpp */; };
 		D008ED5E17A2E5FD0047DEB0 /* Library.mm in Sources */ = {isa = PBXBuildFile; fileRef = D008ED5D17A2E5FD0047DEB0 /* Library.mm */; };
 		D008ED6217A2EC8B0047DEB0 /* lex.cy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D008ED6117A2EC8B0047DEB0 /* lex.cy.cpp */; };
@@ -32,26 +32,26 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D008ED3717A2E4A50047DEB0 /* PBXContainerItemProxy */ = {
+		0285752118D018200024DADA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D008ED3217A2E4A50047DEB0 /* libffi.xcodeproj */;
+			containerPortal = 0285751C18D018200024DADA /* libffi.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = F6F980BA147386130008F121;
-			remoteInfo = "libffi iOS";
+			remoteGlobalIDString = DB13B1661849DF1E0010F42D;
+			remoteInfo = "libffi-iOS";
 		};
-		D008ED3917A2E4A50047DEB0 /* PBXContainerItemProxy */ = {
+		0285752318D018200024DADA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D008ED3217A2E4A50047DEB0 /* libffi.xcodeproj */;
+			containerPortal = 0285751C18D018200024DADA /* libffi.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 6C43CB3D1534E9D100162364;
-			remoteInfo = "libffi OS X";
+			remoteGlobalIDString = DB13B1911849DF510010F42D;
+			remoteInfo = "libffi-Mac";
 		};
-		D008ED3B17A2E4B00047DEB0 /* PBXContainerItemProxy */ = {
+		0285752518D018290024DADA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D008ED3217A2E4A50047DEB0 /* libffi.xcodeproj */;
+			containerPortal = 0285751C18D018200024DADA /* libffi.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = F6F980B9147386130008F121;
-			remoteInfo = "libffi iOS";
+			remoteGlobalIDString = DB13B1651849DF1E0010F42D;
+			remoteInfo = "libffi-iOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -69,9 +69,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		025FEABB18D00E950024AE80 /* Output.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Output.cpp; path = libcycript/ObjectiveC/Output.cpp; sourceTree = SOURCE_ROOT; };
+		0285751C18D018200024DADA /* libffi.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libffi.xcodeproj; path = "libffi-iOS/libffi.xcodeproj"; sourceTree = "<group>"; };
 		D008ED2117A2E47D0047DEB0 /* libcycript.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libcycript.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D008ED2417A2E47D0047DEB0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		D008ED3217A2E4A50047DEB0 /* libffi.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libffi.xcodeproj; path = libffi/libffi.xcodeproj; sourceTree = "<group>"; };
 		D008ED3E17A2E4ED0047DEB0 /* ConvertUTF.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ConvertUTF.c; path = libcycript/ConvertUTF.c; sourceTree = SOURCE_ROOT; };
 		D008ED4017A2E4F70047DEB0 /* Highlight.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Highlight.cpp; path = libcycript/Highlight.cpp; sourceTree = SOURCE_ROOT; };
 		D008ED4217A2E4FE0047DEB0 /* Network.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Network.cpp; path = libcycript/Network.cpp; sourceTree = SOURCE_ROOT; };
@@ -85,7 +86,6 @@
 		D008ED5217A2E5C30047DEB0 /* copy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = copy.cpp; path = libcycript/sig/copy.cpp; sourceTree = SOURCE_ROOT; };
 		D008ED5317A2E5C30047DEB0 /* ffi_type.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ffi_type.cpp; path = libcycript/sig/ffi_type.cpp; sourceTree = SOURCE_ROOT; };
 		D008ED5417A2E5C30047DEB0 /* parse.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = parse.cpp; path = libcycript/sig/parse.cpp; sourceTree = SOURCE_ROOT; };
-		D008ED5917A2E5F00047DEB0 /* Output.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Output.mm; path = libcycript/ObjectiveC/Output.mm; sourceTree = SOURCE_ROOT; };
 		D008ED5B17A2E5F80047DEB0 /* Replace.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Replace.cpp; path = libcycript/ObjectiveC/Replace.cpp; sourceTree = SOURCE_ROOT; };
 		D008ED5D17A2E5FD0047DEB0 /* Library.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Library.mm; path = libcycript/ObjectiveC/Library.mm; sourceTree = SOURCE_ROOT; };
 		D008ED6117A2EC8B0047DEB0 /* lex.cy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = lex.cy.cpp; path = libcycript/lex.cy.cpp; sourceTree = SOURCE_ROOT; };
@@ -99,7 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D008ED3D17A2E4B80047DEB0 /* libffi.a in Frameworks */,
+				0285752718D018310024DADA /* libffi.a in Frameworks */,
 				D07514C617CB038F0055B2FA /* JavaScriptCore.framework in Frameworks */,
 				D008ED2517A2E47D0047DEB0 /* Foundation.framework in Frameworks */,
 			);
@@ -108,6 +108,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0285751D18D018200024DADA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0285752218D018200024DADA /* libffi.a */,
+				0285752418D018200024DADA /* ffi.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		D008ED1817A2E47D0047DEB0 = {
 			isa = PBXGroup;
 			children = (
@@ -129,7 +138,7 @@
 		D008ED2317A2E47D0047DEB0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D008ED3217A2E4A50047DEB0 /* libffi.xcodeproj */,
+				0285751C18D018200024DADA /* libffi.xcodeproj */,
 				D07514C517CB038F0055B2FA /* JavaScriptCore.framework */,
 				D008ED2417A2E47D0047DEB0 /* Foundation.framework */,
 			);
@@ -156,15 +165,6 @@
 			path = cycript;
 			sourceTree = "<group>";
 		};
-		D008ED3317A2E4A50047DEB0 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D008ED3817A2E4A50047DEB0 /* libffi.a */,
-				D008ED3A17A2E4A50047DEB0 /* libffi.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		D008ED5817A2E5C70047DEB0 /* sig */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,7 +178,7 @@
 		D008ED5F17A2E6020047DEB0 /* ObjectiveC */ = {
 			isa = PBXGroup;
 			children = (
-				D008ED5917A2E5F00047DEB0 /* Output.mm */,
+				025FEABB18D00E950024AE80 /* Output.cpp */,
 				D008ED5B17A2E5F80047DEB0 /* Replace.cpp */,
 				D008ED5D17A2E5FD0047DEB0 /* Library.mm */,
 			);
@@ -209,7 +209,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				D008ED3C17A2E4B00047DEB0 /* PBXTargetDependency */,
+				0285752618D018290024DADA /* PBXTargetDependency */,
 			);
 			name = cycript;
 			productName = cycript;
@@ -237,8 +237,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = D008ED3317A2E4A50047DEB0 /* Products */;
-					ProjectRef = D008ED3217A2E4A50047DEB0 /* libffi.xcodeproj */;
+					ProductGroup = 0285751D18D018200024DADA /* Products */;
+					ProjectRef = 0285751C18D018200024DADA /* libffi.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -249,18 +249,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		D008ED3817A2E4A50047DEB0 /* libffi.a */ = {
+		0285752218D018200024DADA /* libffi.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libffi.a;
-			remoteRef = D008ED3717A2E4A50047DEB0 /* PBXContainerItemProxy */;
+			remoteRef = 0285752118D018200024DADA /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		D008ED3A17A2E4A50047DEB0 /* libffi.a */ = {
+		0285752418D018200024DADA /* ffi.dylib */ = {
 			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libffi.a;
-			remoteRef = D008ED3917A2E4A50047DEB0 /* PBXContainerItemProxy */;
+			fileType = "compiled.mach-o.dylib";
+			path = ffi.dylib;
+			remoteRef = 0285752318D018200024DADA /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -294,6 +294,7 @@
 			files = (
 				D008ED3F17A2E4ED0047DEB0 /* ConvertUTF.c in Sources */,
 				D008ED4117A2E4F70047DEB0 /* Highlight.cpp in Sources */,
+				025FEABC18D00E950024AE80 /* Output.cpp in Sources */,
 				D008ED4317A2E4FE0047DEB0 /* Network.cpp in Sources */,
 				D008ED4517A2E5050047DEB0 /* Output.cpp in Sources */,
 				D008ED4717A2E50C0047DEB0 /* Parser.cpp in Sources */,
@@ -305,7 +306,6 @@
 				D008ED5517A2E5C30047DEB0 /* copy.cpp in Sources */,
 				D008ED5617A2E5C30047DEB0 /* ffi_type.cpp in Sources */,
 				D008ED5717A2E5C30047DEB0 /* parse.cpp in Sources */,
-				D008ED5A17A2E5F00047DEB0 /* Output.mm in Sources */,
 				D008ED5C17A2E5F80047DEB0 /* Replace.cpp in Sources */,
 				D008ED5E17A2E5FD0047DEB0 /* Library.mm in Sources */,
 				D008ED6217A2EC8B0047DEB0 /* lex.cy.cpp in Sources */,
@@ -316,10 +316,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D008ED3C17A2E4B00047DEB0 /* PBXTargetDependency */ = {
+		0285752618D018290024DADA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "libffi iOS";
-			targetProxy = D008ED3B17A2E4B00047DEB0 /* PBXContainerItemProxy */;
+			name = "libffi-iOS";
+			targetProxy = 0285752518D018290024DADA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -349,7 +349,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
 					"\"$(SRCROOT)/libcycript\"",
-					"\"$(SRCROOT)/libffi/ios/include\"",
+					"\"$(SRCROOT)/libffi-iOS/darwin_common/include\"",
+					"\"$(SRCROOT)/libffi-iOS/darwin_ios/include\"",
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -374,7 +375,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
 					"\"$(SRCROOT)/libcycript\"",
-					"\"$(SRCROOT)/libffi/ios/include\"",
+					"\"$(SRCROOT)/libffi-iOS/darwin_common/include\"",
+					"\"$(SRCROOT)/libffi-iOS/darwin_ios/include\"",
 				);
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
